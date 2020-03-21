@@ -1,0 +1,185 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar bg-dark navbar-dark">
+  <div class="container">
+    <a href="#" class="navbar-brand"><i class="fas fa-laptop-code fa-2x"></i>  CSE</a>
+  </div>
+</nav>
+<form class="" action="" method="POST">
+
+
+<section id="gallery">
+      <div class="container">
+        <div class="row">
+          <!-- lab1 -->
+          <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+          <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/C-Lab.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Programing For Problem Solving Lab</h5>
+            <p class="card-text">Programming for Problem Solving is a Lab course in B.Tech I year II semester for CSE students. Students learn problem solving and programming through C Language.</p>
+
+            <ul>
+              <li>To Develop programs to solve basic problems using operators and control statements.</li>
+              <li>To Write programs using concepts like Arrays, Strings, pointers and functions.</li>
+              <li>To Write programs using the Dynamic Memory Allocation concept.</li>
+            </ul>
+            <!-- <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a> -->
+              <a href="{% url 'book' %}" class="btn btn-sm btn-outline-success">Book</a>
+          </div>
+        </div>
+          </div>
+          <!-- lab 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-1">
+          <div class="card">
+          <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/C-Lab3.jpg" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Data Structures Lab</h5>
+            <p class="card-text">Data Structures is a Lab course in B.Tech II year I semester. Students learn advanced data structures through C.</p>
+            <ul>
+              <li>To solve basic problems using operators and control statements.</li>
+              <li>To solve problems using data structures such as arrays, linked lists, stacks, queues, trees, graphs and search trees.</li>
+              <li>To learn an object oriented way of solving problems.</li>
+              <li>To write ADTS for all data structures.</li>
+              <li>To understand and develop modular and readable programs.</li>
+              <li>To execute searching and sorting techniques.</li>
+            </ul>
+            <!-- <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a> -->
+            <a href="{% url 'book' %}" class="btn btn-sm btn-outline-success">Book</a>
+          </div>
+        </div>
+        </div>
+        <!-- lab 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Database Management Systems Lab</h5>
+                <p class="card-text">This is a lab course for CSE studetns in B.Tech II year I semester.This is a lab course for CSE studetns in B.Tech II year I semester.Students learn about Database</p>
+                <ul>
+                  <li>Analyze the student on database languages</li>
+                  <li>Interpret the Knowledge on database design.</li>
+                  <li>Determine the knowledge on key constraints and Normalization.</li>
+                  <li>Determine the knowledge on procedures and functions</li>
+                </ul>
+                <!-- <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a> -->
+                <a href="{% url 'book' %}" name='Facility.objects.all()[3]'class="btn btn-sm btn-outline-success ">Book</a>
+
+               </div>
+             </div>
+          </div>
+          <!-- lab 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/Lab-Mic.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Open Source Software Lab</h5>
+                <p class="card-text">This is a lab course for CSE studetns in B.Tech II year I semester. Students learn Python basics in this lab</p>
+                <ul>
+                  <li>To write, test, and debug simple Python programs.</li>
+                  <li>To implement Python programs with conditionals and loops.</li>
+                </ul>
+                <a href="{% url 'book' %}" class="btn btn-sm btn-outline-success">Book</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a> -->
+               </div>
+             </div>
+          </div>
+          <!-- lab 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/Laptops-Lab.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Object Oriented Programming through Java Lab</h5>
+                <p class="card-text">This is a lab course for CSE studetns in B.Tech II year II semester.</p>
+                <ul>
+                  <li>Infer the knowledge of java compiler and eclipse platform</li>
+                  <li>Gain hands on experience with java programming</li>
+                  <li>Gain knowledge on developing java database applications</li>
+                  <li>o understand java applet programming</li>
+                  <li>To understand building java GUI based applications using swing</li>
+                </ul>
+                <a href="{% url 'book' %}" class="btn btn-sm btn-outline-success">Book</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a> -->
+               </div>
+             </div>
+          </div>
+          <!-- lab 6 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div>
+          <!-- lab 7 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div> -->
+          <!-- lab 8 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div> -->
+          <!-- lab 9 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div> -->
+          <!-- lab 10 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div> -->
+          <!-- lab 11 -->
+          <!-- <div class="col-lg-4 col-md-6 col-sm-1">
+            <div class="card">
+              <img class="card-img-top"src="http://www.bvrit.ac.in/images/banners/computerScience/CSE-Lab-8.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Pattern 3</h5>
+                <p class="card-text">this is pattern 3</p>
+                <a href="#" class="btn btn-sm btn-outline-success">Download</a>
+                <a href="#" class="btn btn-sm btn-outline-danger"><i class="fas fa-heart"></i></a>
+               </div>
+             </div>
+          </div>  -->
+        </div>
+      </div>
+      </form>
+
+{% endblock %}
